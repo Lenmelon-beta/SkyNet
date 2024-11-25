@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.553),rgba(0, 0, 0, 0)), url('1657919.jpg');
+  background-size: cover;
+  background-position: 0px 15%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.Nav2{
+  position: absolute;
+  left: 15%;
+  bottom: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.navbar2{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar2 ul li{
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+    display: inline-block;
+}
+.navbar2 ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+.navbar2 ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(65, 50, 226);
+    display: block;
+    margin: auto;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar2 ul li:hover:after{
+    width: 100%;
+}
+
+.boxy {
+    border-style: inset;
+    position: absolute;
+    top: 10%;
+    left: 12.2%;
+    width: 75%;
+    height: 60%;
+    background-color: rgb(126, 127, 138);
+    opacity: 0.8;
+}
+
+.box:hover {
+    cursor: help;
+}
+
+.search {
+    padding-left: 0px;
+}
+
+.SearchBox {
+    cursor: text;
+    display: absolute inline-block;
+}
+
+
+.UploadButton:active {
+  transform: scale(0.96);
+}
+
+.AddButton:active {
+    transform: scale(0.96);
+}
+
+
+.PDF {
+  text-decoration: none;
+  color: black;  
+}
+
+.Skynet{
+  position: absolute;
+  bottom: -17%;
+  left: 10%;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}

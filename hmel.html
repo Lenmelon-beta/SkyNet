@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discussion Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      background-image: url("coffee.jpg");
+    }
+
+    h1 {
+      text-align: center;
+      width: 100%;
+      margin: 20px;
+      background-color:burlywood;
+      border-radius: 25px;
+      text-decoration: underline;
+      font-size:50PX;  
+    }
+
+    #explanation {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #000;
+	  font-family: "helvetica neue",sans-serif;
+	  font-size:18px;
+	  background-color:;
+	  border-radius:10px;
+	  padding:10px;}
+	  
+	  
+
+    #discussion-panel {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      margin: 10px;
+	  border-radius:15px;
+	   opacity: 70%;
+	   background-opacity:2;
+    }
+
+    #input-section {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      margin: 10px;
+	  border-radius:15px;
+    }
+
+    #discussion-panel p, #input-section p {
+      margin: 0;
+	  border-radius:16px;
+	  border:2px outset #000;
+	  padding:2px;
+    }
+
+    #submit-question {
+      background-color: #cbc3e3;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+	  border-radius:15px;
+    }
+
+    .user-question {
+      margin: 10px 0;
+      border: 3px solid #999;
+      padding: 8px;
+	  border-radius:15px;
+	  border-color:#b76e79;
+	  
+    }
+
+    .reply-button {
+      background-color: #008080;
+      color: #fff;
+      border: none;
+      padding: 4px 8px;
+      cursor: pointer;
+	  border-radius:15px;
+	  border:2px outset #000;
+	  
+    }
+	.reply-button a:hover{
+	background-color:#b76e79;
+	border-radius:10px;
+	transition:10;
+	padding:12px;
+	}
+
+    /* Navigation bar at the bottom of the page */
+  .nav ul li{
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+    display: inline-block;
+  }
+  .nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(65, 50, 226);
+    display: block;
+    margin: auto;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+  }
+  .nav ul li:hover:after{
+    width: 100%;
+  }
+
+	input-section a:hover{
+	background-color:#008080;
+	border-radius:10px;
+	
+	padding:12px;
+	
+	}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Discussion Page</h1>
+  </header>
+
+  <div id="explanation">
+    <h3>This is the discussion page, the discussion page is here to help students communicate and engage in collaborative learning. Students can now post questions related to their studies and receive responses from peers. Feel free to post your own questions!</h3>
+  </div>
+
+  <div id="discussion-panel">
+    <h3>Hi, I'm your personal guide called Matt. Ask any question, and I and other students will see that question.</h3>
+    <div class="user-question">
+      <h4 >User: Matt</h4>
+      <p>Question: How to make a simple HTML site for school?</p>
+      <button class="reply-button">Reply</button>
+    </div>
+
+    <div class="user-question">
+      <p>User: Liam</p>
+      <p>Question: how to add css to html without separte page?</p>
+      <button class="reply-button">Reply</button>
+    </div>
+
+    <div class="user-question">
+      <p>User: Ryan</p>
+      <p>Question: how do i make a rounded border for text?</p>
+      <button class="reply-button">Reply</button>
+    </div>
+
+    <div class="user-question">
+      <p>User: Mbali</p>
+      <p>Question: How to make a simple HTML site for school?</p>
+      <button class="reply-button">Reply</button>
+    </div>
+  </div>
+
+  <div id="input-section">
+    <textarea rows="4" cols="50" placeholder="Ask your question here..."></textarea>
+    <br>
+    <button id="submit-question">Submit Question</button>
+  </div>
+  <br>
+  <br>
+  <br>
+
+<nav class= "nav">
+  <div>
+    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="TimeTable.html">Timetable</a></li>
+                        <li><a href="hmel.html">Chat Box</a></li>
+                        <li><a href="Shared.php">Share Resources</a></li>
+                        <li><a href="About US Page.html">About Us</a></li>
+                        <li><a href="Contact Us Page.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+</body>
+</html>

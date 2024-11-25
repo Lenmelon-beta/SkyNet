@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Resource Sharing</title>
+
+        <link rel="stylesheet" href="Assets/styles.css">
+    </head>
+
+    <body>
+        <!--<div class="overlay"><img src="1657919.jpg" alt="Somethings Wrong" class="overlay-image"></div>
+        
+        <div id="dropdown" class="Dropdown">
+            <button id="Menu-Button" class="Menu-Button" onclick="Remove()">Menu</button> 
+            
+            <div class="Options">
+                <a href="#" class="HomePage">HomePage</a> <br>
+                <a href="#" class="Discussion">Discussion</a> <br>
+                <a href="#" class="Timetable">Timetable</a> <br>
+                <a href="#" class="Contact_Us">Contact Us</a> <br>
+                <a href="#" class="About_Us">About Us</a> <br>
+            </div>
+        </div>-->
+
+        <div id="boxy" style="text-align: center;" class="boxy">
+            <p1 class="box"><img src="Assets/NoImageFoundIcon.png" width="250" height="250"><br>
+            No Files Found</p1>
+        </div>
+
+        <div id="search" class="search">
+            <button class="AddButton">+</button>
+            <input type="text" id="SearchBox" name="Search">
+            <button class="SearchButton">Search</button>
+        </div>
+
+    </body>
+
+    <footer id="footer">
+            <nav class="Nav2">
+                <div class="navbar2">
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="TimeTable.html">Timetable</a></li>
+                        <li><a href="hmel.html">Chat Box</a></li>
+                        <li><a href="SharedResourcePage.html">Share Resources</a></li>
+                        <li><a href="About US Page.html">About Us</a></li>
+                        <li><a href="Contact Us Page.html">Contact Us</a></li>
+                </div>
+            </nav>
+    </footer>
+
+    <script>
+        const Add = document.querySelector(".AddButton");
+        const Search = document.querySelector(".SearchButton");
+
+        Search.addEventListener("click", (e) => {
+          e.preventDefault;
+          Search.classList.add("animate");
+          setTimeout(() => {
+            Search.classList.remove("animate");
+          }, 600);
+        });
+
+        Add.addEventListener("click", (e) => {
+          e.preventDefault;
+          Add.classList.add("animate");
+          setTimeout(() => {
+            Add.classList.remove("animate");
+          }, 600);
+        });
+      </script>
+
+
+<!--    <script>
+        function Remove() {
+            var FooterElem = document.querySelector("footer");
+            var DropdownElem = document.querySelector("Dropdown");
+            var BoxyElem = document.querySelector("boxy");
+            var SearchElem = document.querySelector("search");
+            var Button = document.querySelector("Menu-Button")
+            var Image = document.querySelector(".img")
+            
+            Button.addEventListener("click", () => {
+                FooterElem.classList.add("RemoveAnimation");
+                DropdownElem.classList.add("RemoveAnimation");
+                BoxyElem.classList.add("RemoveAnimation");
+                SearchElem.classList.add("RemoveAnimation");
+            });
+
+            FooterElem.classList.add("animate");
+            DropdownElem.classList.add("animate");
+            BoxyElem.classList.add("animate");
+            SearchElem.classList.add("animate");
+            document.getElementById("dropdown").style.display = "none";
+            document.getElementById("search").style.display = "none";
+            document.getElementById("boxy").style.display = "none";
+            document.getElementById("footer").style.display = "none";
+        }
+    </script>-->
+</html>
